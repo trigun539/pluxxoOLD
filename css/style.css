@@ -1,0 +1,328 @@
+@font-face 
+{
+font-family: Exo;
+font-weight: bold;
+src: url('/halo6/assets/font/Exo-Bold.otf');
+}
+
+
+@font-face 
+{
+font-family: Exo;
+font-weight: normal;
+src: url('/halo6/assets/font/Exo-Regular.otf');
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+    /* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+    /* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #337fbe;
+    -webkit-box-shadow: inset 0 0 6px #337fbe;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: #337fbe;
+}
+
+
+
+body 
+{
+background: url('/halo6/game/assets/background.png') no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+h2
+{
+font-size: 20px;
+line-height: 2px;
+color: #FFFFFF;
+font-family: Exo;
+font-weight: bold;
+
+}
+
+
+.tabs
+{
+-moz-border-radius: 6px; /* Firefox */
+-webkit-border-radius: 6px; /* Safari and Chrome */
+-khtml-border-radius: 6px; /* Linux browsers */
+border-radius: 6px; /* Opera 10.50, IE and CSS3 */
+}
+
+
+.tabContainer 
+{
+	float: left;
+	background: red;
+}
+
+.tabContainer div {
+	float: left;
+	width: 50px;
+	height: 35px;
+	background: green;
+	color: white;
+}
+
+.tab
+{
+float: left;
+width: 100px;
+height: 27px;
+color: white;
+font-size: 20px;
+text-align: center;
+
+background-color:rgba(17,35,57,0.82);
+-webkit-border-radius: 5px 5px 0px 0px;
+        border-radius: 5px 5px 0px 0px;
+border-top: 1px solid #1e457c;
+border-left: 1px solid #1e457c;
+border-right: 1px solid #1e457c;
+padding-top:8px;
+margin-right:6px;
+
+transition:background-color .5s;
+-moz-transition:background-color .5s; /* Firefox 4 */
+-webkit-transition:background-color .5s; /* Safari and Chrome */
+-o-transition:background-color .5s; /* Opera */
+}
+
+.tab:hover
+{
+background-color:rgba(106,254,82,0.82);
+}
+
+.topScoresLabels
+{
+width:345px;
+display:block;
+color:#CADDEE;
+padding:3px;
+margin:0px;
+font-family: Exo;
+font-weight: bold;
+font-size: 14px;
+}
+
+.smallBlueBox
+{
+width:376px;
+height:208px;
+background-color:rgba(10,34,53,0.82);
+margin:2px;
+padding:4px;
+display:block;
+overflow : auto;
+
+-webkit-border-radius: 8px;
+border-radius: 8px;
+
+-webkit-box-shadow: inset 2px 2px 20px 1px #000000;
+box-shadow: inset 2px 2px 20px 1px #000000;
+}
+
+
+.topScoresBox
+{
+background-color:#475869;
+border: 1px solid #A4AEB8;
+width:345;
+margin-left:3px;
+margin-bottom:2px;
+margin-right:0px;
+margin-top:0px;
+padding:1px;
+display:block;
+
+transition:background-color .5s;
+-moz-transition:background-color .5s; /* Firefox 4 */
+-webkit-transition:background-color .5s; /* Safari and Chrome */
+-o-transition:background-color .5s; /* Opera */
+}
+
+.topScoresBox:hover
+{
+background-color:#60778E;
+}
+
+.topScoresBox div
+{
+font-family: Exo;
+font-weight: bold;
+font-size: 14px;
+color: #081826;
+}
+
+.topScoresRank
+{
+width:50px;
+display:inline-block;
+text-align:left;
+}
+
+.topScoresUser
+{
+width:190px;
+display:inline-block;
+}
+
+.topScoresScore
+{
+width:95px;
+display:inline-block;
+text-align:right;
+}
+
+.roundedInput
+{
+-webkit-border-radius: 8px 8px 8px 8px;
+border-radius: 8px 8px 8px 8px;
+height:16px;
+outline: none;
+font-size: 11px;
+padding-left:4px;
+background-color:#DDDDDD;
+}
+
+
+
+#TabsBox
+{
+margin-left: 50px;
+float: left;
+
+}
+
+
+#MainBox
+{
+background-color:rgba(17,35,57,0.82);
+border: 1px solid #1e457c;
+width:930px;
+height:520px;
+float:left;
+text-align:center;
+display:table-cell; 
+vertical-align:middle;
+
+-moz-border-radius: 14px; /* Firefox */
+-webkit-border-radius: 14px; /* Safari and Chrome */
+border-radius: 14px; /* Opera 10.50, IE and CSS3 */
+
+}
+
+
+
+#Content
+{
+margin-left: auto; 
+margin-right: auto;
+margin-top:50px;
+
+width:930px;
+}
+
+
+#HomeTab
+{
+margin-left:35px;
+width:95px;
+height:35px;
+background-color:rgba(17,35,57,0.82);
+-webkit-border-radius: 5px 5px 0px 0px;
+border-radius: 5px 5px 0px 0px;
+border-top: 1px solid #1e457c;
+border-left: 1px solid #1e457c;
+}
+
+#RightSkew
+{
+margin-left:60px;
+width:95px;
+height:35px;
+background-color:rgba(17,35,57,0.82);
+-webkit-border-radius: 5px 5px 0px 0px;
+border-radius: 5px 5px 0px 0px;
+border-top: 1px solid #1e457c;
+border-left: 1px solid #1e457c;
+}
+
+#chatDiv
+{
+border: 2px solid #5B7389;
+background-color:rgba(0,0,0,0.29);
+-webkit-border-radius: 14px;
+border-radius: 14px;
+
+width:225px;
+height:203px;
+float:left;
+
+}
+
+#chatUsersDiv
+{
+margin-left:2px;
+border: 2px solid #5B7389;
+background-color:rgba(0,0,0,0.29);
+-webkit-border-radius: 14px;
+border-radius: 14px;
+
+width:128px;
+height:191px;
+float:left;
+padding:6px;
+}
+
+#innerChatDiv
+{
+padding:6px;
+width:208px;
+height:162px;
+}
+
+#chatEnterNew
+{
+background-color:#5B7389;
+width:217px;
+height:23px;
+-webkit-border-radius: 0px 0px 14px 14px;
+border-radius: 0px 0px 14px 14px;
+padding:4px;
+}
+
+
+
+#chatText
+{
+text-align:left;
+font-family: Exo;
+font-size: 12px;
+color: #596F85;
+}
+
+#chatTextHighlight
+{
+text-align:left;
+font-family: Exo;
+font-size: 12px;
+color: #6E869E;
+}

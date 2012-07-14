@@ -1,0 +1,30 @@
+[17-Jun-2012 14:20:43] PHP Parse error:  syntax error, unexpected T_INCLUDE, expecting T_FUNCTION in /home/epwhiz5/public_html/halo6/game/application/controllers/frontpage.php on line 6
+[17-Jun-2012 14:39:31] PHP Fatal error:  Call to a member function GetTestData() on a non-object in /home/epwhiz5/public_html/halo6/game/application/controllers/frontpage.php on line 23
+[17-Jun-2012 14:40:54] PHP Fatal error:  Call to a member function GetTestData() on a non-object in /home/epwhiz5/public_html/halo6/game/application/controllers/frontpage.php on line 23
+[17-Jun-2012 15:10:41] PHP Fatal error:  Call to a member function query() on a non-object in /home/epwhiz5/public_html/halo6/game/application/controllers/frontpage.php on line 23
+[17-Jun-2012 15:20:31] PHP Fatal error:  Call to a member function query() on a non-object in /home/epwhiz5/public_html/halo6/game/application/controllers/DAO/HaloDAO.php on line 14
+[17-Jun-2012 15:23:45] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/epwhiz5/public_html/halo6/game/application/controllers/DAO/HaloDAO.php on line 27
+[17-Jun-2012 15:29:48] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting '(' in /home/epwhiz5/public_html/halo6/game/application/views/frontpage_view.php on line 7
+[17-Jun-2012 15:30:49] PHP Parse error:  syntax error, unexpected ')', expecting T_PAAMAYIM_NEKUDOTAYIM in /home/epwhiz5/public_html/halo6/game/application/views/frontpage_view.php on line 7
+[17-Jun-2012 15:32:17] PHP Parse error:  syntax error, unexpected ')', expecting T_PAAMAYIM_NEKUDOTAYIM in /home/epwhiz5/public_html/halo6/game/application/views/frontpage_view.php on line 7
+[17-Jun-2012 15:32:44] PHP Parse error:  syntax error, unexpected ')', expecting T_PAAMAYIM_NEKUDOTAYIM in /home/epwhiz5/public_html/halo6/game/application/views/frontpage_view.php on line 7
+[17-Jun-2012 15:33:38] PHP Parse error:  syntax error, unexpected ')', expecting T_PAAMAYIM_NEKUDOTAYIM in /home/epwhiz5/public_html/halo6/game/application/views/frontpage_view.php on line 7
+[17-Jun-2012 15:33:49] PHP Parse error:  syntax error, unexpected ')', expecting T_PAAMAYIM_NEKUDOTAYIM in /home/epwhiz5/public_html/halo6/game/application/views/frontpage_view.php on line 7
+[17-Jun-2012 15:34:56] PHP Parse error:  syntax error, unexpected ')', expecting T_PAAMAYIM_NEKUDOTAYIM in /home/epwhiz5/public_html/halo6/game/application/views/frontpage_view.php on line 9
+[17-Jun-2012 15:35:12] PHP Parse error:  syntax error, unexpected ')', expecting T_PAAMAYIM_NEKUDOTAYIM in /home/epwhiz5/public_html/halo6/game/application/views/frontpage_view.php on line 9
+[17-Jun-2012 15:37:54] PHP Parse error:  syntax error, unexpected '[', expecting ',' or ';' in /home/epwhiz5/public_html/halo6/game/application/views/frontpage_view.php on line 9
+[17-Jun-2012 15:38:16] PHP Parse error:  syntax error, unexpected '[', expecting ',' or ';' in /home/epwhiz5/public_html/halo6/game/application/views/frontpage_view.php on line 9
+[17-Jun-2012 15:38:52] PHP Parse error:  syntax error, unexpected '[', expecting ',' or ';' in /home/epwhiz5/public_html/halo6/game/application/views/frontpage_view.php on line 9
+[17-Jun-2012 15:44:05] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting '(' in /home/epwhiz5/public_html/halo6/game/application/views/frontpage_view.php on line 8
+[17-Jun-2012 15:44:23] PHP Parse error:  syntax error, unexpected T_ENDFOR in /home/epwhiz5/public_html/halo6/game/application/views/frontpage_view.php on line 12
+[17-Jun-2012 16:13:44] PHP Fatal error:  Call to a member function result() on a non-object in /home/epwhiz5/public_html/halo6/game/application/views/frontpage_view.php on line 10
+[17-Jun-2012 16:15:34] PHP Fatal error:  Call to a member function result() on a non-object in /home/epwhiz5/public_html/halo6/game/application/views/frontpage_view.php on line 12
+[17-Jun-2012 16:21:55] PHP Fatal error:  Class 'haloDAO' not found in /home/epwhiz5/public_html/halo6/game/application/controllers/frontpage.php on line 14
+[17-Jun-2012 16:23:19] PHP Fatal error:  Class 'haloDAO' not found in /home/epwhiz5/public_html/halo6/game/application/controllers/frontpage.php on line 14
+[17-Jun-2012 16:23:53] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/epwhiz5/public_html/halo6/game/application/controllers/frontpage.php on line 22
+[17-Jun-2012 16:24:57] PHP Parse error:  syntax error, unexpected ';' in /home/epwhiz5/public_html/halo6/game/application/views/frontpage_view.php on line 11
+[03-Jul-2012 17:47:48] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting '(' in /home/epwhiz5/public_html/halo6/game/application/views/topscores_view.php on line 5
+[03-Jul-2012 23:13:02] PHP Parse error:  syntax error, unexpected T_ENDFOREACH in /home/epwhiz5/public_html/halo6/game/application/views/topscores_view.php on line 22
+[14-Jul-2012 12:46:06] PHP Parse error:  syntax error, unexpected ';' in /home/epwhiz5/public_html/halo6/game/application/controllers/PostMessage.php on line 19
+[14-Jul-2012 12:47:05] PHP Parse error:  syntax error, unexpected ';' in /home/epwhiz5/public_html/halo6/game/application/controllers/PostMessage.php on line 19
+[14-Jul-2012 12:47:47] PHP Parse error:  syntax error, unexpected ';' in /home/epwhiz5/public_html/halo6/game/application/controllers/PostMessage.php on line 19
