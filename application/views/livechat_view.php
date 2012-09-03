@@ -2,9 +2,6 @@
 
 
 
-
-
-
 <h2>Chat</h2>
 
 <div class="smallBlueBox">
@@ -14,7 +11,7 @@
 
 		<div id="chatEnterNew">
 
-			<input id="livechat_msg" class="roundedInput" name="msg" type="text" style="width:200px" onkeypress="CheckKeyEntered(event)" />
+			<input id="livechat_msg" class="roundedInput" name="msg" type="text" style="width:200px" onkeypress="CheckKeyEntered(event);" />
 		</div>
 	</div>
 
@@ -32,7 +29,7 @@ var lastmsg;
 
 if(typeof(EventSource)!=="undefined")
   {
-  var source=new EventSource("/halo6/game/index.php/LastMessage");
+  var source=new EventSource("/game/index.php/LastMessage");
   source.onmessage=function(event)
     {
 

@@ -1,3 +1,5 @@
+session_start();
+
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class PostMessage extends CI_Controller
@@ -7,6 +9,8 @@ class PostMessage extends CI_Controller
 	function __construct()
 	{
 	parent::__construct();
+
+	$this->load->library('session');
 	}
 
     public function index()
@@ -20,9 +24,20 @@ class PostMessage extends CI_Controller
 		$msg = str_replace("'", "", "$msg");
 		$msg = str_replace("\"", "", "$msg");
 
-		$user = 2;
 
-		$queryResult = $this->db->query("insert into epwhiz5_halo6.halo6_chat (userID,message) values (" . $user . ",'" . $msg . "')");
+		if($this->session->userdata('userID') != '')
+		{
+			$user = $this->session->userdata('userID');
+			$guestNum = 0;
+		}
+
+		else
+		{
+			$guestNum = $this->session->userdata('guestNum');
+			$user = 0;
+		}
+
+		$queryResult = $this->db->query("insert into pluxxo.halo6_chat (userID,GuestNum,message) values (" . $user . "," . $guestNum . ",'" . $msg . "')");
 
 		}
 

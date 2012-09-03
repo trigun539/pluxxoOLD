@@ -4,6 +4,6 @@ header('Cache-Control: no-cache');
 ?>
 
 
-data:<div id="chatText"><b><?=$lastmsg[4]['username']?></b>: <?=$lastmsg[4]['message']?><br/><b><?=$lastmsg[3]['username']?></b>: <?=$lastmsg[3]['message']?><br/><b><?=$lastmsg[2]['username']?></b>: <?=$lastmsg[2]['message']?><br/><b><?=$lastmsg[1]['username']?></b>: <?=$lastmsg[1]['message']?><br/><div id="chatTextHighlight"><b><?=$lastmsg[0]['username']?></b>: <?=$lastmsg[0]['message']?></div><br/></div>
+data:<div id="chatText"><?php for($i=(count($lastmsg)-1); $i>= 0; $i--): ?><?php if($i==0) echo "<div id=chatTextHighlight>";?><b><?= $lastmsg[$i]['username'];?></b>: <?= $lastmsg[$i]['message'];?><?php if($i==0) echo "</div>"; ?><br/><?php endfor; ?></div>
 
 <?php flush(); ?>

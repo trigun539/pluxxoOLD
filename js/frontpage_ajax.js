@@ -1,12 +1,8 @@
 
 
 //Browser Support Code
-function loadAjaxPage(pagename, divname, innerscripttag)
+function loadAjaxForum()
 {
-
-console.log("Page:" + pagename + ",Div:" + divname + ",Scripttag:" + innerscripttag);
-
-
 	var ajaxRequest;  // The variable that makes Ajax possible!
 
    try
@@ -46,36 +42,21 @@ console.log("Page:" + pagename + ",Div:" + divname + ",Scripttag:" + innerscript
 
 	// Create a function that will receive data sent from the server
 	ajaxRequest.onreadystatechange = function(){
-		if((ajaxRequest.readyState == 4))
+		if((ajaxRequest.readyState == 4))   //loaded
 		{
-			result = ajaxRequest.responseText;
-			var display = document.getElementById(divname);
-			display.innerHTML = result;
-			
-			
-			
-			
-			if(innerscripttag != '')
-			{
-			
-				var ob = document.getElementById(innerscripttag); 
-				eval(ob.text);
-			
-			}
-			
-                }
-                else if((ajaxRequest.readyState == 1))
+			var display = document.getElementById('MainBox');
+            display.innerHTML = ajaxRequest.responseText;
+        }
+        else if((ajaxRequest.readyState == 1))  //loading icon
 		{
-			var display = document.getElementById(divname);
-			display.innerHTML = "<img src=\"/game/assets/ajax-loader.gif\" />";
-                }
+			var display = document.getElementById('MainBox');
+			display.innerHTML = "<div style=\"text-align:center;margin-top:50px;\"><img src=\"/halo6/game/assets/ajax-loader.gif\" /></div>";
+        }
 	}
 
-    
-    
-    var link = "/game/index.php/" + pagename;
+
+
+    var link = "/halo6/game/index.php/Forum";
     ajaxRequest.open("GET", link, true);
     ajaxRequest.send(null);
 }
-
-

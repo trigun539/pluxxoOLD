@@ -2,7 +2,7 @@
 {
 font-family: Exo;
 font-weight: bold;
-src: url('/halo6/assets/font/Exo-Bold.otf');
+src: url('/game/assets/font/Exo-Bold.otf');
 }
 
 
@@ -10,7 +10,7 @@ src: url('/halo6/assets/font/Exo-Bold.otf');
 {
 font-family: Exo;
 font-weight: normal;
-src: url('/halo6/assets/font/Exo-Regular.otf');
+src: url('/game/assets/font/Exo-Regular.otf');
 }
 
 
@@ -40,7 +40,7 @@ src: url('/halo6/assets/font/Exo-Regular.otf');
 
 body 
 {
-background: url('/halo6/game/assets/background.png') no-repeat center center fixed; 
+background:#1F1F24 url('/game/assets/background.png') no-repeat center center fixed; 
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -49,7 +49,7 @@ background-size: cover;
 
 h2
 {
-font-size: 20px;
+font-size: 18px;
 line-height: 2px;
 color: #FFFFFF;
 font-family: Exo;
@@ -86,8 +86,9 @@ border-radius: 6px; /* Opera 10.50, IE and CSS3 */
 float: left;
 width: 100px;
 height: 27px;
+font-family: Exo;
 color: white;
-font-size: 20px;
+font-size: 18px;
 text-align: center;
 
 background-color:rgba(17,35,57,0.82);
@@ -108,6 +109,131 @@ transition:background-color .5s;
 .tab:hover
 {
 background-color:rgba(106,254,82,0.82);
+
+}
+
+
+.gameslistLabels
+{
+width:430px;
+display:block;
+color:#CADDEE;
+padding:3px;
+margin:0px;
+font-family: Exo;
+font-weight: normal;
+font-size: 13px;
+}
+
+.gameslistID
+{
+width:45px;
+display:inline-block;
+text-align:center;
+}
+
+.gameslistMap
+{
+width:75px;
+display:inline-block;
+text-align:center;
+}
+
+.gameslistMode
+{
+width:75px;
+display:inline-block;
+text-align:center;
+}
+
+.gameslistWeapons
+{
+width:75px;
+display:inline-block;
+text-align:center;
+}
+
+.gameslistPlayers
+{
+width:75px;
+display:inline-block;
+text-align:center;
+}
+
+.gameslistPrivate
+{
+width:70px;
+display:inline-block;
+text-align:center;
+}
+
+.gameslistText
+{
+margin-bottom:15px;
+color: #A1BFC4;
+font-size:19px;
+font-weight:bold;
+font-family: Exo;
+display:inline-block;
+text-align:center;
+height:15px;
+}
+
+.gameslistImage
+{
+margin-top:3px;
+color: #A1BFC4;
+font-size:19px;
+font-weight:bold;
+font-family: Exo;
+display:inline-block;
+text-align:center;
+height:39px;
+}
+
+
+.gameslistBox
+{
+width:416;
+height:44px;
+margin-left:8px;
+margin-bottom:3px;
+margin-right:0px;
+margin-top:3px;
+padding:1px;
+display:block;
+text-align:left;
+
+background-image:url('/game/assets/gamelist_item.png');
+background-repeat:no-repeat;
+}
+
+.gameslistBox:hover
+{
+background-image:url('/game/assets/gamelist_item_glow.png');
+}
+
+.gamesOptionsText
+{
+margin-bottom:15px;
+color: #A1BFC4;
+font-size:19px;
+font-weight:bold;
+font-family: Exo;
+display:inline-block;
+text-align:left;
+height:26px;
+}
+
+.gameOptionsDropdown
+{
+color: #A1BFC4;
+background-color:#123456;
+font-weight:bold;
+font-family: Exo;
+font-size:19px;
+float:right;
+margin-right:15px;
 }
 
 .topScoresLabels
@@ -118,8 +244,8 @@ color:#CADDEE;
 padding:3px;
 margin:0px;
 font-family: Exo;
-font-weight: bold;
-font-size: 14px;
+font-weight: normal;
+font-size: 13px;
 }
 
 .smallBlueBox
@@ -167,7 +293,7 @@ background-color:#60778E;
 {
 font-family: Exo;
 font-weight: bold;
-font-size: 14px;
+font-size: 13px;
 color: #081826;
 }
 
@@ -202,13 +328,91 @@ padding-left:4px;
 background-color:#DDDDDD;
 }
 
+.loginText
+{
+font-family: Exo;
+font-size: 14px;
+color: #CADDEE;
+width: 96px;
+float:left;
+}
+
+.loginBox
+{
+margin-bottom:12px;
+}
+
+.greenButton
+{
+padding: 5px 20px;
+background: #47b85b;
+border: 1px solid #5fe478;
+color: #ffffff;
+font-size: 14px;
+font-weight: bold;
+
+-webkit-border-radius: 3px;
+border-radius: 3px;
+
+cursor:pointer;
+}
+
+.createGameButton
+{
+padding: 5px 20px;
+background: #47b85b;
+border: 1px solid #5fe478;
+color: #ffffff;
+font-size: 14px;
+font-weight: bold;
+
+-webkit-border-radius: 3px;
+border-radius: 3px;
+
+cursor:pointer;
+}
+
+.greenButton:hover
+{
+background: #5fe478;
+}
+
+
+.controlsTextLeft
+{
+font-family: Exo;
+font-size: 13px;
+color: #CADDEE;
+width: 140px;
+float:left;
+text-align:right;
+}
+
+.controlsTextRight
+{
+margin-left:40px;
+font-family: Exo;
+font-size: 13px;
+color: #CADDEE;
+width: 100px;
+float:left;
+text-align:left;
+}
+
+.aboutText
+{
+color: #CADDEE;
+font-family: Exo;
+font-size: 14px;
+text-align:left;
+}
 
 
 #TabsBox
 {
 margin-left: 50px;
 float: left;
-
+width:880px;
 }
 
 
@@ -323,6 +527,109 @@ color: #596F85;
 {
 text-align:left;
 font-family: Exo;
-font-size: 12px;
+font-size: 13px;
 color: #6E869E;
+}
+
+#outerLoginBox
+{
+position:absolute;
+top:-342px;
+right:100px;
+width:282px;
+z-index:30;
+}
+
+#innerLoginBox
+{
+width:240px;
+height:300px;
+background-color:rgba(17,35,57,0.82);
+border: 1px solid #1e457c;
+padding:20px;
+}
+
+
+#loginTab
+{
+float:left;
+width: 100px;
+height: 27px;
+color: white;
+font-family: Exo;
+font-size: 18px;
+text-align: center;
+
+transition:background-color .5s;
+
+background-color:rgba(17,35,57,0.82);
+-webkit-border-radius: 0px 0px 5px 5px;
+        border-radius: 0px 0px 5px 5px;
+border-left: 1px solid #1e457c;
+border-right: 1px solid #1e457c;
+border-bottom: 1px solid #1e457c;
+padding-top:6px;
+
+margin-left: 91px; 
+
+-moz-transition:background-color .5s; /* Firefox 4 */
+-webkit-transition:background-color .5s; /* Safari and Chrome */
+-o-transition:background-color .5s; /* Opera */
+}
+
+#loginTab:hover
+{
+background-color:rgba(106,254,82,0.82);
+}
+
+
+#loginFailBox
+{
+height:19px;
+margin-top:10px;
+padding:8px;
+width:225px;
+border: 1px solid #C7DDEE;
+background-color:rgba(202,221,238,0.21);
+font-family: Exo;
+font-size: 13px;
+color: #FFBC42;
+}
+
+#activationBox
+{
+width: 500px;
+height:90px;
+position: absolute;
+top: 50%;
+left: 50%;
+margin-top: -85px; /* Half the height */
+margin-left: -290px; /* Half the width */
+text-align: center;
+padding: 40px;
+font-family: Exo;
+font-size: 20px;
+color: #6AFE52;
+
+background-color:rgba(17,35,57,0.82);
+border: 1px solid #1e457c;
+
+-moz-border-radius: 14px; /* Firefox */
+-webkit-border-radius: 14px; /* Safari and Chrome */
+border-radius: 14px; /* Opera 10.50, IE and CSS3 */
+}
+
+#activationBoxSubtext
+{
+color: #cccccc;
+font-size: 15px;
+}
+
+#usernameText
+{
+margin-top: 20px;
+float: right;
+color: #6AFE52;
+font-size: 13px;
+font-family: Exo;
 }
