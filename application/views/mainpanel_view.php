@@ -27,7 +27,7 @@
 	<?php for($i=0; $i<count($games); $i++): ?>
 
 
-		<a href="javascript:void(0)" onclick="loadAjaxPage('LobbyPanel?game=<?= $games[$i]['matchID']; ?>', 'MainBox','loadGamePanelScript');">
+		<a href="javascript:void(0)" onclick="loadAjaxPage('LobbyPanel?game=<?= $games[$i]['matchID']; ?>', 'MainBox','liveChatScript');">
 		<div class="gameslistBox">
 				<div class="gameslistText" style="width:60px"><?= $games[$i]['matchID']; ?></div>
 				<div class="gameslistImage" style="width:60px"><img src="/game/assets/map_bloodgulch.png" /></div>
@@ -111,7 +111,7 @@
 
 				<div id="chatEnterNew">
 
-					<input id="livechat_msg" class="roundedInput" name="msg" type="text" style="width:200px" onkeypress="CheckKeyEntered(event);" />
+					<input id="livechat_msg" class="roundedInput" name="msg" type="text" style="width:200px" onkeypress="CheckKeyEntered(event, 0);" />
 				</div>
 			</div>
 
@@ -138,7 +138,7 @@
 
 		if(typeof(EventSource)!=="undefined")
 		  {
-		  var source=new EventSource("/game/index.php/LastMessage");
+		  var source=new EventSource("/game/index.php/LastMessage?gameID=0");
 		  source.onmessage=function(event)
 		    {
 

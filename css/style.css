@@ -503,6 +503,13 @@ width:208px;
 height:162px;
 }
 
+#lobbyInnerChatDiv
+{
+padding:6px;
+width:208px;
+height:162px;
+}
+
 #chatEnterNew
 {
 background-color:#5B7389;

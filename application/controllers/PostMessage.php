@@ -20,9 +20,14 @@ class PostMessage extends CI_Controller
 		if(isset($_POST['msg']))
 		{
 		$msg = $_POST['msg'];
-		$msg = str_replace("<", "", "$msg");
-		$msg = str_replace("'", "", "$msg");
-		$msg = str_replace("\"", "", "$msg");
+		$msg = str_replace("<", "", $msg);
+		$msg = str_replace("'", "", $msg);
+		$msg = str_replace("\"", "", $msg);
+
+		$gameID = $_POST['gameID'];
+		$gameID = str_replace("<", "", $gameID);
+		$gameID = str_replace("'", "", $gameID);
+		$gameID = str_replace("\"", "", $gameID);
 
 
 		if($this->session->userdata('userID') != '')
@@ -37,7 +42,13 @@ class PostMessage extends CI_Controller
 			$user = 0;
 		}
 
-		$queryResult = $this->db->query("insert into pluxxo.halo6_chat (userID,GuestNum,message) values (" . $user . "," . $guestNum . ",'" . $msg . "')");
+
+		$sql = "insert into pluxxo.halo6_chat (userID,GuestNum,GameID,message) values (" . $user . "," . $guestNum . "," . $gameID  . ",'" . $msg . "')";
+
+
+		$queryResult = $this->db->query($sql);
+
+		echo $sql;
 
 		}
 

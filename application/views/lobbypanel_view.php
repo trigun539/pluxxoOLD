@@ -68,11 +68,11 @@
 
 	<div id="chatUsersDiv" style="width:300px;height:150px;float:none;margin-bottom:10px;"></div>
 	<div id="chatDiv" style="width:315px;height:278px;float:none;display:block;">
-			<div id="innerChatDiv" style="width:305px;height:238px;"></div>
+			<div id="lobbyInnerChatDiv" style="width:305px;height:238px;"></div>
 
 			<div id="chatEnterNew" style="width:309px">
 
-				<input id="livechat_msg" class="roundedInput" name="msg" type="text" style="width:290px" onkeypress="CheckKeyEntered(event);" />
+				<input id="livechat_msg" class="roundedInput" name="msg" type="text" style="width:290px" onkeypress="CheckKeyEntered(event, <?= $gameID ?>);" />
 			</div>
 		</div>
 
@@ -84,3 +84,28 @@
 
 
 
+
+
+
+<script id="liveChatScript">
+		var lastmsg;
+
+		if(typeof(EventSource)!=="undefined")
+		  {
+		  var source=new EventSource("/game/index.php/LastMessage?gameID=<?= $gameID ?>");
+		  source.onmessage=function(event)
+		    {
+
+				if(event.data != lastmsg)  //don't retype the same message
+				{
+				document.getElementById("lobbyInnerChatDiv").innerHTML = event.data + "<br />";
+				lastmsg = event.data;
+				}
+		    };
+		  }
+		else
+		  {
+		  document.getElementById("result").innerHTML="Sorry, your browser does not support server-sent events...";
+		  }
+
+</script>

@@ -1,8 +1,7 @@
 
 
-function liveChatPost(msg)
+function liveChatPost(msg, gameID)
 {
-
 	var ajaxRequest;  // The variable that makes Ajax possible!
 	
 	   try
@@ -52,7 +51,7 @@ function liveChatPost(msg)
 	  }
 	 }
 	}
-	var parameters="msg=" + msg;
+	var parameters="msg=" + msg + "&gameID=" + gameID;
 	
 	ajaxRequest.open("POST", "/game/index.php/PostMessage", true);
 	ajaxRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");

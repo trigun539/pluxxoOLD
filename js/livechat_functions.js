@@ -1,4 +1,4 @@
-function CheckKeyEntered(e)
+function CheckKeyEntered(e, gameID)
 {
     if (e.keyCode == 13)   //user pressed enter, run script
     {
@@ -6,7 +6,7 @@ function CheckKeyEntered(e)
 
         if(msg != "")
         {
-        	liveChatPost(msg.value);
+        	liveChatPost(msg.value, gameID);
         }
 
         msg.value = "";
